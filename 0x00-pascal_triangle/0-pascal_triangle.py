@@ -3,7 +3,6 @@
 The pascal's triangle
 """
 
-
 def pascal_triangle(n):
     """
     function that returns a list of lists of integers 
