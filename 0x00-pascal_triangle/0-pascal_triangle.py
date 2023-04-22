@@ -5,7 +5,7 @@ The pascal's triangle
 
 def pascal_triangle(n):
     """
-    function that returns a list of lists of integers 
+    Function that returns a list of lists of integers 
     representing the pascal's triangle of n.
     """
     if n <= 0:
@@ -16,4 +16,3 @@ def pascal_triangle(n):
         row = [x+y for x,y in zip(row + [0], [0] + row)]
         result.append(row)
     return result
-
