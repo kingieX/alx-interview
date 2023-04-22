@@ -3,7 +3,6 @@
 returns a list of lists of integers representing pascal triangle
 """
 def pascal_triangle(n):
-    # if n is less than or equal to 0, return an empty list
     if n <= 0:
         return []
 
