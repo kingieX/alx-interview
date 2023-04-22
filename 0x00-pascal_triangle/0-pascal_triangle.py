@@ -2,7 +2,13 @@
 """
 returns a list of lists of integers representing the pascal's triangle
 """
+
+
 def pascal_triangle(n):
+    """
+    function that returns a list of lists of integers representing 
+    the pascal's triangle of n.
+    """
     if n <= 0:
         return []
 
