@@ -5,8 +5,8 @@ The pascal's triangle
 
 def pascal_triangle(n):
     """
-        Function that returns a list of lists of integers 
-        representing the pascal's triangle of n.
+    Function that returns a list of lists of integers 
+    representing the pascal's triangle of n.
     """
     if n <= 0:
         return []
