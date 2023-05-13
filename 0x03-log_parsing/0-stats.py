@@ -7,13 +7,14 @@ import sys
 import re
 
 if __name__ == '__main__':
+
     line_count = 0
     total_file_size = 0
     status_codes = ["200", "301", "400", "401", "403", "404", "405", "500"]
     stats = {code: 0 for code in status_codes}
 
     def print_stats(stats: dict, total_size: int) -> None:
-        print("Total file size:", total_size)
+        print("File size:", total_size)
         for code in sorted(stats):
             if stats[code] > 0:
                 print(code + ":", stats[code])
