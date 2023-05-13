@@ -23,21 +23,16 @@ if __name__ == '__main__':
         for line in sys.stdin:
             line_count += 1
             line = line.strip()
-
             match = re.match(r'.*GET \/projects\/260 HTTP\/1\.1" (\d+) (\d+)', line)
             if match:
                 status_code = match.group(1)
                 file_size = int(match.group(2))
-
                 if status_code in status_codes:
                     stats[status_code] += 1
                 total_file_size += file_size
-
             if line_count % 10 == 0:
                 print_stats(stats, total_file_size)
-
         print_stats(stats, total_file_size)
-
     except KeyboardInterrupt:
         print_stats(stats, total_file_size)
         raise
