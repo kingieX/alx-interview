@@ -4,6 +4,7 @@ The N queens puzzle
 """
 import sys
 
+
 def is_safe(board, row, col, N):
     # Check if the current position is safe for a queen
     # Check the row
@@ -79,4 +80,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     solutions = solve_nqueens(N)
-    print_solutions(solutions)
+    for solution in solutions:
+        for row in solution:
+            print(row)
+        print()
