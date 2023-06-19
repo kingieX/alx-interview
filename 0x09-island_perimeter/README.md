@@ -29,6 +29,7 @@ To calculate the perimeter of the island, the <strong>'island_perimeter'</strong
 
 ## Test case
 
+<code>
     #!/usr/bin/python3
 """
 0-main
@@ -44,3 +45,4 @@ if __name__ == "__main__":
         [0, 0, 0, 0, 0, 0]
     ]
     print(island_perimeter(grid))
+</code>
